@@ -1,0 +1,24 @@
+{
+  "name": "koa-ocr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/config.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "prod": "pm2 start src/app.js  --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^4.0.1",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.3.0",
+    "tencentcloud-sdk-nodejs": "^4.0.150"
+  }
+}

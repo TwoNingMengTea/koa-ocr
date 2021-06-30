@@ -1,6 +1,7 @@
 const Koa = require('koa')
 const bodyParser = require('koa-bodyparser')
 const cors = require('koa2-cors')
+const config = require('')
 
 const publicRouter = require('./routes/public')
 const privateRouter = require('./routes/private')
@@ -33,6 +34,7 @@ app
 // Response
 app.use(responseHandler)
 
-app.listen(9019, () => {
-  console.log('server is starting at port 9019')
-})
+// app.listen(config.port, () => {
+//   console.log('server is starting at port 9019')
+// })
+module.exports = app

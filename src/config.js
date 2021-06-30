@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  port: '3001',
+  port: '9019',
   verifyCode: '123456789',
   secretId: 'AKIDnPlqfDUUDfrmRpwmLdeOr65pKYfV4MO9',
   secretKey: 'VjhOoysVrwlJaaJlwqTqxnMefPs40f4C',

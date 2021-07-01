@@ -5,7 +5,7 @@
   "main": "src/config1.js",
   "scripts": {
     "start": "NODE_ENV=development node src/bin/www",
-    "restart:development": "NODE_ENV=development pm2 restart src/bin/www --watch",
+    "restart:dev": "NODE_ENV=development pm2 restart src/bin/www --watch",
     "start:test": "NODE_ENV=test pm2 start src/bin/www --watch",
     "restart:test": "NODE_ENV=test pm2 restart src/bin/www --watch",
     "start:prod": "NODE_ENV=production pm2 start src/bin/www --watch",

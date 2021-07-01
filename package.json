@@ -2,10 +2,14 @@
   "name": "koa-ocr",
   "version": "1.0.0",
   "description": "",
-  "main": "src/config.js",
+  "main": "src/config1.js",
   "scripts": {
-    "start": "node src/app.js",
-    "prod": "pm2 start src/app.js  --watch",
+    "start": "NODE_ENV=development node src/bin/www",
+    "restart:development": "NODE_ENV=development pm2 restart src/bin/www --watch",
+    "start:test": "NODE_ENV=test pm2 start src/bin/www --watch",
+    "restart:test": "NODE_ENV=test pm2 restart src/bin/www --watch",
+    "start:prod": "NODE_ENV=production pm2 start src/bin/www --watch",
+    "restart:prod": "NODE_ENV=production pm2 restart src/bin/www --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

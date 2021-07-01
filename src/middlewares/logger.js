@@ -4,6 +4,7 @@ const log4js = require('log4js')
 const config = require('../config')
 
 const logsDir = path.parse(config.logPath).dir
+
 // 判断路径是否存在，不存在则新建
 if (!fs.existsSync(logsDir)) fs.mkdirSync(logsDir)
 
